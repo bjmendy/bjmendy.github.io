@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Who's that Pokemon?!</title>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+</head>
+<body>
+
+	<div id="header" align="center">
+		<img src="http://fontmeme.com/permalink/170216/5a550e9f338cf89e29fc7634f1d0db3a.png"/>
+	</div>
+
+	<div class="container">
+	<!-- this is the scoreboard! -->
+		<div class="column-left" align="center">
+			<div id="scoreboard"><h1>SCORE</h1>
+				<span id="score"></span>
+			</div>
+			<br>
+				<button id="myBtn">High Scores</button>
+
+				<!-- The Modal -->
+					<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+				  <div class="modal-content">
+				    <span class="close">&times;</span>
+				    <div class="highScore">You have the highest score -->  </div>
+				  </div>
+
+</div>
+		</div>
+
+	<!-- this is the start button and timer!!!! -->
+   	<div class="column-right" align="center">
+   		<div id="timer" align="center"><h1>TIMER</h1>
+   				<span id="clock">60</span>
+   				<br>
+   				<button id="time">Click here to start!</button>
+   		</div>
+   	</div>
+
+ 	<div class="column-center" align="center">
+		<div id="pokemon"></div>
+
+	<!--  answer bar!!! -->
+	<div id="answer-bar" align="center">
+		<input type="Answer goes here" name="answer" id="answer">
+		<button id="go">Go!</button>
+	</div>
+	</div>
+
+</div>
+
+<!-- <footer align="center">Made by Bridjet Mendyuk</footer> -->
+
+	<!-- 	music goes here -->
+	<embed id="pokemon-theme" src="music/109-pewter-city-s-theme.mp3" autostart="true" loop="true" hidden="true">
+
+	<script src="js/app.js"></script>
+</body>
+</html>
